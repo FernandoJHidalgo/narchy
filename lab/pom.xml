@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>opennars</groupId>
+  <artifactId>lab</artifactId>
+  <version>1.8-SNAPSHOT</version>
+  <inceptionYear>2016</inceptionYear>
+  <parent>
+    <groupId>opennars</groupId>
+    <artifactId>narchy</artifactId>
+    <version>1.8-SNAPSHOT</version>
+  </parent>
+  <licenses>
+    <license>
+      <name>GNU AFFERO GENERAL PUBLIC LICENSE (AGPL)</name>
+      <url>https://www.gnu.org/licenses/agpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>jcenter</name>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+    <repository>
+      <id>snapshots-repo</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases><enabled>false</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>opennars</groupId>
+      <artifactId>guifx</artifactId>
+      <version>1.8-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.apache.bcel</groupId>-->
+      <!--<artifactId>bcel</artifactId>-->
+      <!--<version>6.0-20140709</version>-->
+      <!--<scope>compile</scope>-->
+    <!--</dependency>-->
+    <dependency>
+      <groupId>net.onedaybeard.artemis</groupId>
+      <artifactId>artemis-odb</artifactId>
+      <version>2.0.0-RC4</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>de.dfki.mary</groupId>
+      <artifactId>voice-cmu-slt-hsmm</artifactId>
+      <version>5.2</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>edu.cmu.sphinx</groupId>
+      <artifactId>sphinx4-core</artifactId>
+      <version>5prealpha-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>edu.cmu.sphinx</groupId>
+      <artifactId>sphinx4-data</artifactId>
+      <version>5prealpha-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>net.java.jinput</groupId>
+      <artifactId>jinput</artifactId>
+      <version>2.0.6</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/net.sourceforge.owlapi/owlapi-distribution -->
+    <dependency>
+      <groupId>net.sourceforge.owlapi</groupId>
+      <artifactId>owlapi-distribution</artifactId>
+      <version>5.0.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp -->
+    <dependency>
+      <groupId>edu.stanford.nlp</groupId>
+      <artifactId>stanford-corenlp</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+
+  </dependencies>
+
+
+</project>

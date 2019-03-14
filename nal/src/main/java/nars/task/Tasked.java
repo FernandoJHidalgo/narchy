@@ -1,0 +1,17 @@
+package nars.task;
+
+
+import org.jetbrains.annotations.Nullable;
+
+@FunctionalInterface
+public interface Tasked  {
+
+    @Nullable Task task();
+
+    @Nullable
+    static Task the(Object possiblyTask) {
+        if (possiblyTask instanceof Tasked)
+            return ((Tasked)possiblyTask).task();
+        return null;
+    }
+}
